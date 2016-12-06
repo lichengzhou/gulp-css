@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>摇旺感恩有你，全民加息
+	</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="摇旺累计投资破亿元！送你万元红包，感恩亿路有你！" />
+	<!--<meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no" />-->
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-title" content="...">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<style>
+		.yugao{
+			position:fixed;
+			top:0px;
+			left:0px;
+			width:100%;
+			height:100%;
+			background:url(di.jpg) no-repeat;
+			background-size: 100% 100%;
+		}
+		.guangyun{
+			background:url(guangyun.png) no-repeat;
+			background-size: contain;
+			position:absolute;
+			left:0;
+			top:0px;
+			width: 115px;
+    		height: 84px;
+    		transition: opacity 1s;
+    		-moz-transition: opacity 1s;
+			-webkit-transition: opacity 1s;
+			-o-transition: opacity 1s;
+		}
+		.share-icon{
+			height:25px;
+			width:55px;
+			background: url(share.png) no-repeat;
+			background-size: contain;
+			position:absolute;
+			top:20px;
+			right:26px;
+		}
+		.yaobao{
+			background: url(biao.png) no-repeat;
+			background-size: contain;
+			width:60%;
+			margin:30px auto 15px;
+			height:50px;
+		}
+		.desc{
+			height:75px;
+			width:85%;
+			margin: 0 6% 0 9%;
+			text-align:center;
+			line-height: 75px;
+		}
+		.desc span{
+			background: url(c1.png) no-repeat;
+		    background-size: contain;
+		    display: inline-block;
+		    width: 22%;
+		    height: 75px;
+		    -webkit-animation-name: 'wobble1';
+		    -webkit-animation-duration: 0.4s;
+		    -webkit-animation-timing-function: ease;
+		    -webkit-animation-iteration-count: 1;
+		    background-position: 0 4px;
+		    float: left;
+		}
+		.desc span.c1{
+			background-image: :url(c1.png);
+			-webkit-animation-delay:0s;
+		}
+		.desc span.c2{
+			background-image:url(c2.png);
+			-webkit-animation-delay:0.5s;
+			background-position: 0 0;
+			-webkit-animation:advantage 0.4s ease 1, wobble1 0.4s ease 0.4s 1;
+		    animation:advantage 0.4s ease 1, wobble1 0.4s ease 0.4s 1;
+		}
+		.desc span.c3{
+			background-image:url(c3.png);
+			-webkit-animation-delay:1s;
+			-webkit-animation:advantage 0.8s ease 1, wobble1 0.4s ease 0.8s 1;
+		    animation:advantage 0.8s ease 1, wobble1 0.4s ease 0.8s 1;
+		}
+		.desc span.c4{
+			background-image:url(c4.png);
+			 -webkit-animation-delay:1.5s;
+			 -webkit-animation:advantage 1.2s ease 1, wobble1 0.4s ease 1.2s 1;
+		    animation:advantage 1.2s ease 1, wobble1 0.4s ease 1.2s 1;
+
+		}
+		.desc span.c5{
+			background-image:url(c5.png);
+			-webkit-animation-delay:2s;
+			width: 11%;
+			-webkit-animation:advantage 1.6s ease 1, wobble1 0.4s ease 1.6s 1;
+		    animation:advantage 1.6s ease 1, wobble1 0.4s ease 1.6s 1;
+		}
+
+		@-webkit-keyframes 'wobble1' { 
+		  0% { 
+		    transform:translateY(-200px) scale(1);
+		  }
+		  70%{
+		  	transform:translateY(100px) scale(2);
+		  }
+		  100% { 
+		    transform:translateY(0px) scale(2);
+		  }
+		}
+
+		.guang{
+			height: 70px;
+		    background: url(line.png) no-repeat;
+		    background-size: 100% 100%;
+		    position: relative;
+		   /* -webkit-animation-name: 'advantage';
+		    -webkit-animation-duration: 2s;
+		    -webkit-animation-timing-function: ease;
+		    -webkit-animation-iteration-count: 1;*/
+		}
+		.point{
+			background: url(point.png) no-repeat;
+		    background-size: 100% 100%;
+		    background-position: -9px 8px;
+		    width: 135px;
+		    height: 80px;
+		    margin-left: 50%;
+		    transform: translateX(-40px);
+		    /*animation: move 1s ease 2s 1;
+		    -webkit-animation: move 2s ease 2s 1;*/
+		}
+		@-webkit-keyframes 'move' { 
+		  0% { 
+		    transform:translateX(-200px);
+		  }
+		  30% { 
+		    transform:translateX(100%);
+		  }
+		  60% { 
+		    transform:translateX(-200px);
+		  }
+		  80% { 
+		    transform:translateX(20%);
+		  }
+		  100%{
+		  	transform:translateX(-2px);
+		  }
+		}
+		.advantage{
+			position: relative;
+			-webkit-animation-name:'advantage';
+		    -webkit-animation-duration: 3s;
+		    -webkit-animation-timing-function: ease;
+		    -webkit-animation-iteration-count: 1;
+		}
+		@-webkit-keyframes 'advantage' { 
+		  0% { 
+		    opacity:0;
+		  }
+		  100% { 
+		    opacity:0;
+		  }
+		}
+		.circle{
+			width:130px;
+			height:130px;
+			margin:5px auto;
+			background: url(jingbiao.png) no-repeat;
+			background-size: contain;
+			transform-style:preserve-3d;
+			-webkit-animation-name:'circle';
+		    -webkit-animation-duration: 0.4s;
+		    -webkit-animation-timing-function: ease;
+		    -webkit-animation-iteration-count: 5;
+		    /*-webkit-animation-delay:3s;*/
+		}
+		@-webkit-keyframes 'circle' { 
+		  0%{-webkit-transform:rotateX(0deg)} 
+		  100%{
+		  	-webkit-transform:rotateX(1080deg);
+		  }
+		}
+		.y1,.x1{
+		    position: absolute;
+		    left: 50%;
+		    top: -14%;
+		    background: url(y1.png) no-repeat;
+		    background-size: contain;
+		    width: 140px;
+		    height: 67px;
+		    transform: translateX(-178px);
+		    -webkit-animation:x1 0.5s ease 3s 1;
+		    animation:x1 0.5s ease 3s 1;
+		}
+		.x1{
+		    top: 22%;
+		    background-image: url(x1.png);
+		    -webkit-animation-duration: 0.3s;
+		    transform: translateX(-172px);
+		}
+		@-webkit-keyframes 'x1' { 
+		  0% { 
+		    transform:translateX(-300px);
+		  }
+		  30% { 
+		    transform:translateX(-200px);
+		  }
+		  100% { 
+		    transform:translateX(-178px);
+		  }
+		}
+		.y2,.x2{
+		    position: absolute;
+		    right: 50%;
+		    top: -24%;
+		    background: url(y2.png) no-repeat;
+		    background-size: contain;
+		    width: 132px;
+		    height: 63px;
+		    transform: translateX(169px);
+		    -webkit-animation:advantage 3.5s ease 1, x2 0.5s ease 3.5s 1;
+		    animation:advantage 3.5s ease 1, x2 0.5s ease 3.5s 1;
+		    /*-webkit-animation-name: 'x2';
+		    -webkit-animation-duration: 0.6s;
+		    -webkit-animation-timing-function: ease;
+		    -webkit-animation-iteration-count: 1;
+		    -webkit-animation-delay: 2s;*/
+		}
+		.x2{
+		    top: 6%;
+		    background-image: url(x2.png);
+		    -webkit-animation:advantage 3.5s ease 1, x2 0.3s ease 3.5s 1;
+		    animation:advantage 3.5s ease 1, x2 0.3s ease 3.5s 1;
+		    transform: translateX(166px);
+		}
+
+		@-webkit-keyframes 'x2' { 
+		  0% { 
+		    transform:translateX(300px);
+		  }
+		  30% { 
+		    transform:translateX(250px);
+		  }
+		  100% { 
+		    transform:translateX(155px);
+		  }
+		}
+
+		.y3,.x3{
+		    position: absolute;
+		    left: 50%;
+		    top: 100%;
+		    background: url(y3.png) no-repeat;
+		    background-size: contain;
+		    width: 158px;
+		    height: 67px;
+		    transform: translateX(-161px) translateY(-26px);
+		    -webkit-animation:advantage 4s ease 1, x3 0.5s ease 4s 1;
+		    animation:advantage 4s ease 1, x3 0.5s ease 4s 1;
+		}
+		.x3{
+		    top: 100%;
+		    background-image: url(x3.png);
+		    transform: translateX(-159px) translateY(-5px);
+		    -webkit-animation:advantage 4s ease 1, x3 0.3s ease 4s 1;
+		    animation:advantage 4s ease 1, x3 0.3s ease 4s 1;
+		}
+
+		@-webkit-keyframes 'x3' { 
+		  0% { 
+		    transform:translateX(-300px) translateY(-26px);
+		  }
+		  30% { 
+		    transform:translateX(-200px) translateY(-26px);
+		  }
+		  100% { 
+		    transform:translateX(-178px) translateY(-26px);
+		  }
+		}
+
+		.y4,.x4{
+		    position: absolute;
+		    right: 50%;
+		    top: 100%;
+		    background: url(y4.png) no-repeat;
+		    background-size: contain;
+		    width: 176px;
+		    height: 53px;
+		    transform: translateX(161px) translateY(0px);
+		    -webkit-animation:advantage 4.5s ease 1, x2 0.5s ease 4.5s 1;
+		    animation:advantage 4.5s ease 1, x2 0.5s ease 4.5s 1;
+		}
+		.x4{
+		    top: 100%;
+		    background-image: url(x4.png);
+		    transform: translateX(200px) translateY(-13px);
+		    -webkit-animation:advantage 4.5s ease 1, x2 0.3s ease 4.5s 1;
+		    animation:advantage 4.5s ease 1, x2 0.3s ease 4.5s 1;
+		}
+		.stars{
+			position:absolute;
+		    width: 1px;
+		    height: 1px;
+		    left:0px;
+		    top:0px;
+		    background: transparent;
+		    box-shadow: 302px 147px #e5be6b, 150px 50px #e5be6b, 155px 70px #e5be6b, 156px 71px #e5be6b, 158px 73px #e5be6b,160px 88px #e5be6b,162px 75px #e5be6b,163px 88px #e5be6b,165px 70px #e5be6b,162px 88px #e5be6b,170px 78px #e5be6b,172px 90px #e5be6b,169px 95px #e5be6b,184px 90px #e5be6b,178px 95px #e5be6b,176px 98px #e5be6b,180px 58px #e5be6b,182px 58px #e5be6b,200px 100px #e5be6b,210px 80px #e5be6b,220px 90px #e5be6b,230px 100px #e5be6b,240px 90px #e5be6b,260px 130px #e5be6b,280px 150px #e5be6b,300px 120px #e5be6b,290px 80px #e5be6b,270px 90px #e5be6b,280px 120px #e5be6b,260px 100px #e5be6b,250px 80px #e5be6b,210px 82px #e5be6b,205px 72px #e5be6b,200px 70px #e5be6b,150px 130px #e5be6b,151px 131px #e5be6b,151px 133px #e5be6b,152px 131px #e5be6b,152px 133px #e5be6b,152px 135px #e5be6b,153px 131px #e5be6b,153px 133px #e5be6b,153px 135px #e5be6b,153px 137px #e5be6b,164px 132px #e5be6b,144px 134px #e5be6b,154px 136px #e5be6b,152px 138px #e5be6b,154px 144px #e5be6b,155px 132px #e5be6b,154px 134px #e5be6b
+		       ,155px 128px #e5be6b,154px 111px #e5be6b,153px 128px #e5be6b,149px 134px #e5be6b,148px 134px #e5be6b,156px 134px #e5be6b,158px 130px #e5be6b,157px 128px #e5be6b,154px 134px #e5be6b,154px 134px #e5be6b,154px 134px #e5be6b;
+		    animation: advantage 2s ease 1, movingStars 5s ease-in-out 2s infinite;
+		}
+		.stars1{
+			position:absolute;
+		    width: 1px;
+		    height: 1px;
+		    left:0px;
+		    top:0px;
+		    background: transparent;
+		    box-shadow: 332px 147px #e5be6b, 125px 80px #e5be6b, 165px 90px #e5be6b, 159px 88px #e5be6b, 155px 79px #e5be6b,165px 98px #e5be6b,177px 77px #e5be6b,165px 87px #e5be6b,175px 78px #e5be6b,163px 98px #e5be6b,168px 97px #e5be6b,173px 96px #e5be6b,169px 95px #e5be6b,184px 97px #e5be6b,168px 95px #e5be6b,176px 98px #e5be6b,184px 58px #e5be6b,182px 58px #e5be6b,206px 102px #e5be6b,218px 80px #e5be6b,220px 90px #e5be6b,230px 103px #e5be6b,243px 98px #e5be6b,260px 138px #e5be6b,284px 150px #e5be6b,313px 120px #e5be6b,290px 84px #e5be6b,270px 92px #e5be6b,281px 153px #e5be6b,253px 123px #e5be6b,250px 87px #e5be6b,214px 94px #e5be6b,235px 72px #e5be6b,230px 72px #e5be6b,150px 130px #e5be6b,151px 102px #e5be6b,153px 102px #e5be6b,155px 96px #e5be6b,162px 83px #e5be6b,163px 85px #e5be6b,170px 104px #e5be6b,168px 88px #e5be6b,167px 87px #e5be6b,166px 85px #e5be6b,165px 83px #e5be6b,164px 87px #e5be6b,161px 100px #e5be6b,156px 87px #e5be6b,148px 88px #e5be6b,153px 94px #e5be6b,200px 70px #e5be6b;;
+		    animation: advantage 3s ease 1, movingStars 5s ease-in-out 3s infinite;
+		}
+		.stars2{
+			position:absolute;
+		    width: 1px;
+		    height: 1px;
+		    left:0px;
+		    top:0px;
+		    background: transparent;
+		    box-shadow: 322px 147px #e5be6b, 122px 80px #e5be6b, 155px 90px #e5be6b, 156px 78px #e5be6b, 158px 78px #e5be6b,164px 98px #e5be6b,175px 79px #e5be6b,163px 88px #e5be6b,165px 76px #e5be6b,162px 88px #e5be6b,178px 98px #e5be6b,172px 95px #e5be6b,169px 95px #e5be6b,184px 97px #e5be6b,168px 95px #e5be6b,176px 98px #e5be6b,184px 58px #e5be6b,182px 58px #e5be6b,200px 102px #e5be6b,218px 80px #e5be6b,220px 90px #e5be6b,230px 103px #e5be6b,240px 98px #e5be6b,260px 138px #e5be6b,284px 150px #e5be6b,313px 120px #e5be6b,290px 84px #e5be6b,270px 90px #e5be6b,284px 123px #e5be6b,250px 103px #e5be6b,250px 80px #e5be6b,215px 92px #e5be6b,205px 72px #e5be6b,230px 72px #e5be6b,150px 130px #e5be6b,151px 100px #e5be6b,153px 102px #e5be6b,155px 96px #e5be6b,160px 83px #e5be6b,165px 85px #e5be6b,170px 100px #e5be6b,168px 88px #e5be6b,167px 87px #e5be6b,166px 85px #e5be6b,165px 83px #e5be6b,164px 87px #e5be6b,161px 100px #e5be6b,159px 89px #e5be6b,158px 88px #e5be6b,154px 90px #e5be6b,200px 70px #e5be6b;
+		    animation: advantage 4s ease 1, movingStars 5s ease-in-out 4s infinite;
+		}
+		.stars3{
+			position:absolute;
+		    width: 1px;
+		    height: 1px;
+		    left:0px;
+		    top:0px;
+		    background: transparent;
+		    box-shadow: 340px 147px #e5be6b, 292px 100px #e5be6b, 285px 90px #e5be6b, 276px 98px #e5be6b, 188px 78px #e5be6b,164px 108px #e5be6b,205px 79px #e5be6b,183px 88px #e5be6b,255px 76px #e5be6b,242px 98px #e5be6b,238px 98px #e5be6b,202px 95px #e5be6b,189px 95px #e5be6b,184px 97px #e5be6b,168px 95px #e5be6b,176px 98px #e5be6b,184px 58px #e5be6b,182px 58px #e5be6b,200px 102px #e5be6b,218px 80px #e5be6b,220px 90px #e5be6b,230px 103px #e5be6b,240px 98px #e5be6b,260px 138px #e5be6b,284px 150px #e5be6b,313px 120px #e5be6b,290px 84px #e5be6b,270px 90px #e5be6b,284px 123px #e5be6b,250px 103px #e5be6b,250px 80px #e5be6b,215px 92px #e5be6b,205px 72px #e5be6b,230px 72px #e5be6b
+		    ,154px 131px #e5be6b,151px 110px #e5be6b,155px 103px #e5be6b,156px 94px #e5be6b,162px 81px #e5be6b,165px 85px #e5be6b,170px 100px #e5be6b,168px 88px #e5be6b,167px 87px #e5be6b,166px 85px #e5be6b,165px 83px #e5be6b,164px 87px #e5be6b,161px 100px #e5be6b,159px 89px #e5be6b,158px 88px #e5be6b,154px 90px #e5be6b,200px 70px #e5be6b;;
+		    animation: advantage 5s ease 1, movingStars 5s ease-in-out 5s infinite;
+		}
+		.stars4{
+			position:absolute;
+		    width: 1px;
+		    height: 1px;
+		    left:0px;
+		    top:0px;
+		    background: transparent;
+		    box-shadow: 325px 148px #e5be6b, 112px 84px #e5be6b, 157px 92px #e5be6b, 148px 76px #e5be6b, 155px 75px #e5be6b,166px 93px #e5be6b,177px 76px #e5be6b,164px 85px #e5be6b,161px 96px #e5be6b,172px 108px #e5be6b,181px 98px #e5be6b,175px 95px #e5be6b,167px 95px #e5be6b,183px 97px #e5be6b,164px 95px #e5be6b,172px 98px #e5be6b,187px 71px #e5be6b,183px 93px #e5be6b,204px 102px #e5be6b,218px 84px #e5be6b,224px 90px #e5be6b,235px 103px #e5be6b,241px 98px #e5be6b,264px 138px #e5be6b,284px 152px #e5be6b,313px 124px #e5be6b,293px 84px #e5be6b,273px 91px #e5be6b,284px 123px #e5be6b,254px 103px #e5be6b,252px 92px #e5be6b,215px 92px #e5be6b,215px 72px #e5be6b,233px 72px #e5be6b
+		    ,150px 125px #e5be6b,152px 98px #e5be6b,153px 103px #e5be6b,155px 100px #e5be6b,170px 83px #e5be6b,175px 95px #e5be6b,169px 90px #e5be6b,168px 91px #e5be6b,169px 89px #e5be6b,176px 85px #e5be6b,168px 89px #e5be6b,168px 89px #e5be6b,164px 104px #e5be6b,157px 82px #e5be6b,154px 83px #e5be6b,151px 92px #e5be6b,147px 71px #e5be6b;;
+		    animation: advantage 6s ease 1, movingStars 5s ease-in-out 6s infinite;
+		}
+		@-webkit-keyframes 'movingStars' { 
+		  0% { 
+		    transform:translateY(20px) translateX(-20px200px);
+		  }
+		  100% { 
+		    transform:translateY(-100px) translateX(200px);
+		  }
+		}
+		.book{
+			background: url(book.gif) no-repeat;
+			background-size: contain;
+			width: 100%;
+		    height: 168px;
+		    position: absolute;
+		    bottom: 0;
+		}
+		.kong{
+			height:260px;
+		}
+		@media screen and (min-width:400px){
+		    .book{
+				    background-size: contain;
+				    height: 200px;
+				    margin-bottom: 0px;
+			}
+			.kong{
+				height:290px;
+			}
+		}
+		@media screen and (max-width:320px){
+		    .book{
+				height: 120px;
+			}
+			.kong{
+				height:220px;
+			}
+		}
+		
+	</style>
+</head>
+<body>
+  <div class="yugao">
+  		<div class="share-icon"></div>
+  		<!-- <div class="guangyun"></div>
+  		<div class="yaobao"></div>
+  		<div class="stars"></div>
+  		<div class="stars1"></div>
+  		<div class="stars2"></div>
+  		<div class="stars3"></div>
+  		<div class="stars4"></div>
+  		<div class="desc">
+  			<span class="c1"></span>
+  			<span class="c2"></span>
+  			<span class="c3"></span>
+  			<span class="c4"></span>
+  			<span class="c5"></span>
+  		</div>
+  		<div class="guang">
+  			<div class="point"></div>
+  		</div> -->
+  		<div class="kong"></div>
+  		<div class="advantage">
+  			<div class="circle"></div>
+  			<div class="y1"></div>
+  			<div class="y2"></div>
+  			<div class="y3"></div>
+  			<div class="y4"></div>
+  			<div class="x1"></div>
+  			<div class="x2"></div>
+  			<div class="x3"></div>
+  			<div class="x4"></div>
+  		</div>
+  		<div class="book">
+  			
+  		</div>
+  </div>
+</body>
+</html>

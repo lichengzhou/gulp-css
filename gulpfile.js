@@ -22,7 +22,7 @@ gulp.task("buildcss", function(){
 			.pipe(gulp.dest('./dist/css'));
 });
 //
-gulp.task("buildcss", function(){
+gulp.task("buildcss1", function(){
 	return gulp.src('./app/css/*.css')
 			.pipe(postcss(processors))
 			.pipe(mimifyCss())
@@ -31,9 +31,11 @@ gulp.task("buildcss", function(){
 
 // 注册任务
 gulp.task('webserver', function() {
-    gulp.src( './' ) // 服务器目录（./代表根目录）
+    gulp.src( './app' ) // 服务器目录（./代表根目录）
     .pipe(webserver({ // 运行gulp-webserver
         livereload: true, // 启用LiveReload
+        port:8088,
+        host:'192.168.62.223',
         open: true // 服务器启动时自动打开网页
     }));
 });

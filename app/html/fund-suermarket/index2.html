@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>摇旺感恩有你，全民加息
+	</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="摇旺累计投资破亿元！送你万元红包，感恩亿路有你！" />
+	<!--<meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no" />-->
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-title" content="...">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<style>
+		body{
+			background:#EEF3F9;
+			margin:0;
+		}
+		p{
+			margin:0;
+		}
+		ul{
+			padding:0;
+			margin:0;
+		}
+
+		ul{
+			background:#fff;
+			list-style: none;
+			line-height: 40px;
+		}
+		.tab{
+			padding-right:18px;
+			background:url(shadow.png) #fff no-repeat;
+			background-position:100%;
+			overflow: hidden;
+		}
+		.days{
+			position:fixed;
+			bottom:0;
+			width: 100%;
+			border-top:1px solid #e5e5e5;
+		}
+		.bottom40{
+			margin-bottom:40px;
+		}
+		.tab ul{
+			overflow-x: auto;
+			height:40px;
+			/*width:100%;*/
+			white-space: nowrap;
+			-webkit-overflow-scrolling : touch;  
+		}
+		::-webkit-scrollbar{
+			display:none;
+		}
+		.tab li{
+			width:60px;
+			display:inline-block;
+			background: #fff;
+			font-size: 14px;
+			color: #B5B5B5;
+			position: relative;
+			text-align: center;
+		}
+		.tab li.active{
+			color: #4F4F4F;
+		}
+		.days li.active{
+			color: #FF5532;
+		}
+		.tab li.active span{
+			background: #FF5532;
+			width:18px;
+			height:2px;
+			position: absolute;
+			bottom: 0;
+			left:50%;
+			transform: translate(-50%);
+		}
+		.prdlist{
+			margin-top:10px;
+			padding:0 16px;
+		}
+		.prdlist li{
+			display: flex;
+			display: -webkit-flex;
+			font-size: 14px;
+			color: #4F4F4F;
+			height:48px;
+			line-height: 48px;
+			border-bottom:1px solid #e5e5e5;
+		}
+		.prdlist li:nth-child(1){
+			font-size: 12px;
+			line-height: 34px;
+			height:34px;
+		}
+		.prdlist li div{
+			flex:1;
+		}
+		.prdlist li div.long{
+			flex:3;
+		}
+		.center{
+			text-align:center;
+		}
+		.right{
+			text-align:right;
+		}
+		.prdlist .large{
+			font-size: 14px;
+			color: #4F4F4F;
+			line-height: 1.4;
+			margin-top:6px;
+		}
+		.prdlist .small{
+			font-size: 12px;
+			color: #B5B5B5;
+			line-height: 1.4;
+		}
+		.prdlist .percolor{
+			color:#FF5532;
+		}
+		.sort{
+		    background: url(normal.png) #fff no-repeat;
+		    background-size: 7px;
+		    background-position: 100%;
+		    padding-right: 10px;
+		}
+		.up{
+			background-image:url(up.png);
+		}
+		.down{
+			background-image:url(down.png);
+		}
+		.kong{
+			background:url(kong.png) #fff no-repeat;
+			background-size:200px;
+			background-position:50% 130px;
+			position:absolute;
+			top:0;
+			width:100%;
+			height:100%;
+			z-index:-1;
+		}
+		.kong div{
+			font-size: 15px;
+			color: #B5B5B5;
+			text-align:center;
+			margin-top: 340px;
+		}
+		.kong .btn{
+			background: #FF5532;
+			width:85%;
+			color:#fff;
+			font-size:18px;
+			line-height: 44px;
+			height:44px;
+			margin:15px auto;
+		}
+		@media screen and (max-width:320px){
+		    .line{
+		      width:37%;
+			}
+		}
+	</style>
+</head>
+<body>
+   <div class="fund-market">
+   		<ul class="prdlist bottom40">
+   			<li class="title">
+   				<div class="long">基金名称</div>
+   				<div class="center">单位净值</div>
+   				<div class="right">日涨幅<span class="sort"></span></div>
+   			</li>
+   			<li>
+   				<div class="long">
+   					<div class="large">长盛电子信息产业混合A</div>
+   					<div class="small">080012</div>
+   				</div>
+   				<div class="center">
+   					<div class="large">2.5088</div>
+   					<div class="small">11/14</div>
+   				</div>
+   				<div class="right percolor">
+   					＋0.58%
+   				</div>
+   			</li>
+   			<li>
+   				<div class="long">
+   					<div class="large">长盛电子信息产业混合A</div>
+   					<div class="small">080012</div>
+   				</div>
+   				<div class="center">
+   					<div class="large">2.5088</div>
+   					<div class="small">11/14</div>
+   				</div>
+   				<div class="right percolor">
+   					＋0.58%
+   				</div>
+   			</li>
+   		</ul>
+   		<div class="kong">
+   			<div>还没有关注基金哦！</div>
+   			<div class="btn">去看看基金</div>
+   		</div>
+   		<div class="tab days">
+	   		<ul>
+	   			<li>全部</li>
+	   			<li class="active">我的自选</li>
+	   			<li>股票型</li>
+	   			<li>混合型</li>
+	   			<li>指数型</li>
+	   		</ul>
+   		</div>
+   </div>
+</body>
+</html>

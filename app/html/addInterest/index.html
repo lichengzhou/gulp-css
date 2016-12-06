@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>摇旺感恩有你，全民加息
+	</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="摇旺累计投资破亿元！送你万元红包，感恩亿路有你！" />
+	<!--<meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no" />-->
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-title" content="...">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<style>
+		body,ul{padding:0}li,ul{list-style:none}body{margin:0;background:#F9D028}img{border:0;width:100%}.main{padding:0 20px;margin-top:20px}.rule-txt{position:absolute;padding:0;margin:5px 0 0;top:0;left:16%;right:7%;font-size:12px;line-height:1.2}.product{background:#FFFFC4;padding:24px 17px 35px;position:relative;margin-bottom:34px;border-radius:10px}.top-title{font-size:20px;color:#444;border:1px solid #D3B437;border-radius:50px;line-height:38px;text-align:center;position:absolute;background:#FFFFC4;left:50%;width:160px;height:38px;top:-19px;-webkit-transform:translateX(-80px);transform:translateX(-80px)}.buy-btn,.notice{background:#FE4A18;text-align:center}.prdlist{margin-bottom:43px;min-height: 100px;}.prditem{color:#FE4A18;border-bottom:1px solid #cac19c;margin-top:13px}li.prditem:last-child{border-bottom:none}.prdname{font-size:16px;color:#444;line-height:23px}.interest{font-size:20px;line-height:42px}.operator{font-size:8px}.addition{font-size:30px}.buy-btn{float:right;height:26px;border-radius:20px;width:112px;color:#fff;font-size:16px;line-height:26px}.notice{line-height:39px;width:248px;font-size:18px;color:#FFF;border-radius:5px;position:relative;left:50%;-webkit-transform:translateX(-124px);transform:translateX(-124px);margin-bottom:20px}.notice:after{content:" ";border-top:15px solid #FE4A18;border-left:15px solid transparent;border-right:15px solid transparent;position:absolute;top:37px;left:50%;-webkit-transform:translateX(-8px);transform:translateX(-8px)}.example{text-align:center}.example img{width:210px}.rule{background:#FFFFC4;border-radius:10px;position:relative;padding:26px 18px 10px 33px;margin-bottom:25px}.rule ul{font-size:12px;color:#000;line-height:25px}.rule ul li{text-indent:-17px}.rule ul li img{display:inline-block;height:12px;width:auto;margin-right:5px;vertical-align:middle}
+			.mask{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6)}
+        	.mask-img{width:141px;float:right;margin:20px}.btn{width:200px;}.event-btn{text-align: center;overflow: hidden;display: block;margin-bottom: 20px;}
+	</style>
+</head>
+<body>
+  <img src="images/img_banner@2x.png">
+  <div class="main">
+  <div class="product">
+  	 <div class="top-title">每日加息产品</div>
+	  	 <ul class="prdlist">
+	  	 </ul>
+	  	 <a href="javascript:;" class="event-btn"><img class="btn" src="images/button.png"></a>
+	  	 <div class="notice">抢加息 认准加息标签哦！</div>
+	  	 <div class="example">
+	  	 	<img src="images/img_iphone.png">
+	  	 </div>
+	  </div>
+	  <div class="rule">
+	  	<div class="top-title">活动规则</div>
+	  	<ul>
+	  		<li><img src="images/icon_Star@2x.png">活动时间为2016年10月24日—11月7日；</li>
+	  		<li><img src="images/icon_Star@2x.png">活动期间每日上线加息产品：90天加息0.5%，180天加息0.8%，360天加息1.2%;</li>
+			<li><img src="images/icon_Star@2x.png">活动期间产品列表中带有加息标志的才是加息产品，其他产品不享受加息;</li>
+			<li><img src="images/icon_Star@2x.png">同一用户每天可抢购多笔加息产品，不设上限，每日加息产品放出量以实际为准，抢完为止;</li>
+			<li><img src="images/icon_Star@2x.png">详询客服热线:4000499188；</li>
+			<li class="apple"><img src="images/icon_Star@2x.png">本活动与苹果公司无关；</li>
+			<li><img src="images/icon_Star@2x.png">活动最终解释权归摇旺所有。</li>
+	  	</ul>
+	  </div>
+	  <div class="mask"><img class="mask-img" src="images/img_beanannouncement_shareguide.png" alt=""></div>
+  </div>
+  <script src="https://static.91yaowang.com/yaowang/libs/jquery-2.1.4.min.js"></script>
+	<script src="weixin_jdk.js"></script>
+	<script>
+	    var apiRoot = location.origin + '/app/webservice/v2/';
+	    var isApp=getParam('isapp');
+	    $.ajax({
+	    	method: "POST",
+	        url :apiRoot + "threeProductTempList",
+	        data : {},
+	        dataType:'json',
+	        success: function (d) {
+	        	d = d.data;
+	             var temp = "";
+	            var href = location.href.indexOf("weizhan") == -1 ? location.origin + "/#productDetail/" : location.origin + "/weizhan/#productDetail/"
+	            var item;
+	            for(var i = 0; i < d.threeTempList.length; i++){
+	            	item = d.threeTempList[i];
+	            	if(item){
+	            		temp += '<li class="prditem">'
+	            	     + '<div class="prdname">' + item.productName + '</div>'
+	            	     + '<div><span class="interest">' + item.annualizedRate + '%</span>'
+	            	     + '<span class="operator">' ;
+	            	     if(item.productAddonRate && item.productAddonRate > 0){
+	            	     	temp += ' + ';
+	            	     }
+		            	temp += '</span>';
+		            	if(item.productAddonRate && item.productAddonRate > 0){
+		            		temp +=  '<span class="addition">' + item.productAddonRate + '%</span>'
+		            	}
+
+		            	if(isApp){
+		            		temp +=  '<a href="/weizhan/product/productClassifyList"><span class="buy-btn">马上抢购</span></a></div></li>';
+		            	}else{
+		            		temp +=  '<a href="'+ href + item.productNo + '"><span class="buy-btn">马上抢购</span></a></div></li>';
+		            	}
+	            	}
+	            }
+	            $(".prdlist").html(temp);
+	        }
+	    });
+
+	    var  userUogin = localStorage.getItem('yw_user_loginToken');
+	    var inviteCode;
+	    localStorage.setItem("yw_user_inviteCode", getInviteCode(location.href));
+	    if(userUogin){
+	    	$.ajax({
+		        method: "POST",
+		        url :apiRoot + "inviteCodeOption",
+		        data : {url: location.href, loginToken:userUogin},
+		        dataType:'json',
+		        success: function (d) {
+		           inviteCode = d.data.inviteValue;
+		           
+		           shareWeixin(inviteCode);
+		        }
+		    });
+	    }else{
+	    	shareWeixin(null);
+	    }
+	    
+	    function shareWeixin(inviteCode){
+	    	$.ajax({
+		        method: "POST",
+		        url :location.origin + "/weizhan/wechat/getWechatConfig",
+		        data : {url: location.href},
+		        dataType:'json',
+		        success: function (d) {
+		            _initWeChat(d, inviteCode);
+		        }
+		    });
+	    }
+	    function getParam(key){
+	        var reg = new RegExp(key +"=([^#&]*)",'i');
+	        var r = location.href.match(reg);
+	        if (r!=null) return unescape(r[1]); return null;
+	    }
+	    
+	    $('.event-btn').on('click',function(){
+			$('#copy').focus().select();
+	        if(isApp){
+	        	//判断是否登录
+	        	if(userUogin){
+	        		window.location='/weizhan/member/inviteFriends';
+	        	}else{
+	        		window.location.href = location.origin + "/weizhan/login"
+	        	}
+	        }else{
+	            $('.mask').show();
+	        }
+	    });
+	    $('.mask').on('click',function(){
+	        $('.mask').hide();
+	    });
+
+	    function _initWeChat(d, code){
+	        wx.config({
+	            debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+	            appId: d.appId, // 必填，公众号的唯一标识
+	            timestamp: d.timestamp, // 必填，生成签名的时间戳
+	            nonceStr: d.noncestr, // 必填，生成签名的随机串
+	            signature: d.signature,// 必填，签名，见附录1
+	            jsApiList: ['onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ', 'onMenuShareWeibo','onMenuShareQZone', 'openLocation', 'getLocation', 'scanQRCode'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2 onMenuShareAppMessage showOptionMenu
+	        });
+	        var cfg={
+	            title: '我正在摇旺抢0.5%—1.2%加息，来跟我一起赚钱吧！',
+	            desc: '一起给钱包充充电',
+	            link: inviteCodeToUrl(location.href, code || inviteCode),
+	            imgUrl: location.origin+'/weizhan/html/addInterest/images/share.png',
+	            success: function () {
+
+	            },
+	            cancel: function () {
+
+	            }
+	        };
+	        wx.showOptionMenu();
+	        wx.ready(function () {
+	            wx.onMenuShareAppMessage(cfg);
+	            wx.onMenuShareTimeline(cfg);
+	            wx.onMenuShareQQ(cfg);
+	            wx.onMenuShareWeibo(cfg);
+	            wx.onMenuShareQZone(cfg);
+	        });
+		    }
+
+		    //处理链接加邀请码
+		    function inviteCodeToUrl(url, inviteCode){
+		    	var newUrl = url;
+		    	if(inviteCode){
+		    		if(url.indexOf("code=") != -1){
+			    		var codeSplit = url.split("code=");
+			    		var temp = codeSplit[1];
+			    		if(temp){
+			    			var params = temp.split("&");
+			    			if(params && params.length > 0){
+			    				params[0] = inviteCode;
+			    			}
+			    			codeSplit[1] =  params.join("&");
+			    		}
+			    		newUrl = codeSplit.join("code=");
+			    	}else if(url.indexOf("?") == -1){
+			    		newUrl += "?code=" + inviteCode;
+			    	}else{
+			    		newUrl +=  "&code=" + inviteCode;
+			    	}
+			    	return newUrl;
+		    	}
+		    	else{
+		    		return newUrl;
+		    	}
+		    }
+
+		    //
+		    function getInviteCode(url){
+		    	if(url.indexOf("code=") != -1){
+		    		var codeSplit = url.split("code=");
+		    		var temp = codeSplit[1];
+		    		if(temp){
+		    			var params = temp.split("&");
+		    			if(params && params.length > 0){
+		    				return params[0];
+		    			}
+		    		}
+		    	}
+		    	return null;
+		    }
+	</script>
+</body>
+</html>

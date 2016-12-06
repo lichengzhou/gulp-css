@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title>摇旺感恩有你，全民加息
+	</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="摇旺累计投资破亿元！送你万元红包，感恩亿路有你！" />
+	<!--<meta name="viewport" content="target-densitydpi=device-dpi,width=640,user-scalable=no" />-->
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="apple-mobile-web-app-title" content="...">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="x-rim-auto-match" content="none">
+	<meta name="apple-touch-fullscreen" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<style>
+		body{
+			background:#EEF3F9;
+			margin:0;
+		}
+		.unlogin{
+			background: url(unlogin.png) no-repeat left top;
+		    position: relative;
+		    height: 177px;
+		    background-size: 100% 177px;
+		    text-align:center;
+		    position: relative;
+		}
+		.unlogin .gologin{
+			position: relative;
+			font-size:18px;
+			line-height: 25px;
+			color:#4F4F4F;
+			text-align:center;
+			top:50%;
+			left:50%;
+			transform:translateX(-50%) translateY(-50%);
+		}
+		.unlogin img{
+			width:11px;
+			margin-left:4px;
+		}
+		.yestoday{
+			background: url(yestoday.png) no-repeat left top;
+		    background-image: url(yestoday.png);
+		    position: relative;
+		    height: 177px;
+		    background-size: 100% 177px;
+		    text-align:center;
+		}
+		.remind{
+			width: 17px;
+		    position: absolute;
+		    right: 23px;
+		    top: 20px;
+		}
+		.num{
+			background: #FF5532;
+			top:25px;
+			right:12px;
+			position: absolute;
+			color:#fff;
+			width:17px;
+			height:17px;
+			font-size:10px;
+			border-radius:17px;
+			text-align:center;
+			line-height: 17px;
+		}
+		.yestoday .title{
+			font-size: 14px;
+			color: #7A7A7A;
+			padding-top:40px;
+		}
+		.yestoday .profit{
+			font-size: 56px;
+			color: #4F4F4F;
+			line-height: 78px;
+		}
+		.yestoday .yellow, .unlogin .yellow{
+			position:absolute;
+			left:0;
+			bottom: 0;
+			background: #FFF9C9;
+			border: 1px solid #FFF0C9;
+			font-size: 13px;
+			line-height: 41px;
+			color: #FE6140;
+			width:100%;
+		}
+		.yestoday .line, .unlogin .line{
+			border-left:1px solid #707070;
+			margin-right:4px;
+		}
+		.yestoday .close, .unlogin .close{
+
+		}
+		.entry{
+			background:url(cycle.png) no-repeat;
+			background-size:100% 72px;
+			height:72px;
+			display:flex;
+			display:-webkit-flex;
+			flex-direction: row;
+			align-items:center;
+			width:100%;
+			justify-content:center;
+			margin-bottom:10px;
+			background:#fff;
+		}
+		.entry div{
+			width:50%;
+		}
+		.entry img{
+			width:44px;
+			margin-left:17px;
+		}
+		.entry div{
+			/*flex-grow:1;*/
+		}
+		.entry .item{
+			/*flex-grow:2;*/
+			margin-left:3px;
+		}
+		.entry p{
+			font-size: 13px;
+			color: #4F4F4F;
+		}
+		.entry .fri{
+			color:#B5B5B5;
+		}
+		.entry .special{
+			color: #FF5532;
+		}
+		.entry .special1{
+			color: #4F4F4F;
+		}
+
+		.banner{
+			margin-bottom:10px;
+		}
+
+		.new{
+			text-align:center;
+			background:url(new.png) no-repeat;
+			background-size: 100% 248px;
+			height:248px;
+		}
+		.new .title{
+			margin-top:11px;
+			font-size: 18px;
+			color: #4F4F4F;
+		}
+		.new .title1{
+			font-size: 13px;
+			color: #C1C1C1;
+		}
+		.new .condition{
+			opacity: 0.8;
+			font-size: 12px;
+			line-height:17px;
+			margin-top:11px;
+		}
+		.new .con1{
+			color: #FFA233;
+			border:1px solid #FFA233;
+			padding:1px 4px;
+			border-radius:3px;
+		}
+		.new .con2{
+			margin-left:10px;
+			color: #3B8BE8;
+			border:1px solid #3B8BE8;
+			padding:1px 4px;
+			border-radius:3px;
+		}
+		.new .prd{
+			font-size: 60px;
+			line-height: 84px;
+			color: #FF5532;
+		}
+		.new .sm{
+			font-size:18px;
+		}
+		.new .dateline{
+			font-size: 14px;
+			color: #4F4F4F;
+		}
+		.new .detail{
+			width:325px;
+			height:48px;
+			background: #FF5532;
+			color:#fff;
+			line-height: 48px;
+			margin:15px auto;
+		}
+		.new .sp{
+			color:#FFA233;
+			font-size:16px;
+		}
+
+		.total{
+			display:flex;
+			display: -webkit-flex;
+			flex-direction: row;
+			text-align:center;
+			justify-content:  center;
+			opacity: 0.75;
+			background: #FFFFFF;
+		}
+		.total p{
+			width:50%;
+			font-size: 14px;
+			color: #BDBDBD;
+		}
+		.total .tt{
+			font-size: 18px;
+			color:#000;
+		}
+		.safe{
+			height:135px;
+			color: #9FA7B4;
+			text-align: center;
+		}
+		.safe .desc{
+			display:flex;
+			display: -webkit-flex;
+			flex-direction: row;
+			text-align:center;
+			justify-content:center;
+			font-size: 13px;
+			line-height: 18px;
+			margin:31px auto 28px;
+
+		}
+		.safe .desc div{
+			padding-top:5px;
+			width:33.3%;
+			height: 46px;
+			background:url(1.png) no-repeat 50% 0%;
+			background-size:73px 46px;
+		}
+		.safe .sficon{
+			font-size: 11px;
+			line-height: 15px;
+			color: #9FA7B4;
+		}
+		.safe img{
+			width:10px;
+			vertical-align: -2px;
+		}
+
+		.bannerSlide .pages li {
+		    display: inline-block;
+		    margin: 0 5px 5px 0;
+		    width: 4px;
+		    height: 2px;
+		    background: rgba(255,255,255,0.5);
+		    border-radius: 3px;
+		    vertical-align: middle;
+		}
+		.bannerSlide .pages li.active {
+		    background: #fff;
+		    width: 11px;
+		    height: 2px;
+		}
+	</style>
+</head>
+<body>
+  <div class="yestoday">
+  	 <img class="remind" src="bell.png">
+  	 <span class="num">0</span>
+  	 <div class="title">昨日收益（元）</div>
+  	 <div class="profit">1,455.23</div>
+  	 <div class="yellow">
+  		<span class="line"></span>
+  		<span>旺豆家园 上线有礼 首兑即送 50元 理财红包</span>
+  		<span class="close">X</span>
+  	 </div>
+  </div>
+  <div class="unlogin">
+  	 <div class="gologin">登录/注册<img src="loginicon.png"></div>
+  	 <div class="yellow">
+  		<span class="line"></span>
+  		<span>旺豆家园 上线有礼 首兑即送 50元 理财红包</span>
+  		<span class="close">X</span>
+  	 </div>
+  </div>
+  <div class="entry">
+  	 <div>
+  	 	<img src="invite.png">
+  	 </div>
+  	 <div class="item">
+  	 	<p class="fri">
+	  	 	<span class="special1">邀请好友</span><br>
+	  	 	获取<span class="special">888</span>旺豆
+  	 	</p>
+  	 </div>
+  	 <div>
+  	 	<img src="sign.png">
+  	 </div>
+  	 <div class="item">
+  	 	<p>
+  	 	<span>每日签到</span><br>
+  	 	<span class="special">爆款白拿</span>
+  	 	</p>
+  	 </div>
+  </div>
+  <div class="new">
+  	<div>
+  		<span class="title">新手旺</span>
+  		<span class="title1">111期</span>
+  	</div>
+  	<div class="condition">
+  		<span class="con1">1000起投</span>
+  		<span class="con2">多层风控</span>
+  	</div>
+  	<div class="prd">
+  		14.00<span class="sm">%</span>
+  	</div>
+  	<div class="dateline">期限<span class="sp">7</span>天</div>
+  	<div class="detail">马上赚钱</div>
+  </div>
+  <div class="total">
+  	 <p>
+  	 	<span class="tt">189,888,888</span><br>
+  	 	<span>累计投资金额</span>
+  	 </p>
+  	 <p>
+  	 	<span class="tt">211,671</span><br>
+  	 	<span>累计用户数（人）</span>
+  	 </p>
+  </div>
+  <div class="safe">
+  	 <div class="desc">
+	  	 <div>128位SSL<br>加密算法</div>
+	  	 <div>十层风控<br>十道审核</div>
+	  	 <div>网络三层<br>防护体系</div>
+  	 </div>
+  	 <div class="sficon">
+  	 	<img src="safe.png">
+  	 	<span>账户资金安全由银行第三方支付机构快钱支付托管</span>
+  	 </div>
+  </div>
+</body>
+</html>

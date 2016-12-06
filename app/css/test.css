@@ -1,3 +1,18 @@
 .test{
 	display:flex;
+	animation:'start' 3s ease 1s infinite alternate;
+}
+@keyframes start{
+	0%{
+	width:30px;
+	transform:rotate(30deg);
+	}
+	50%{
+	width:100px;
+	transform:rotate(60deg);
+	}
+	100%{
+	width:200px;
+	transform:rotate(90deg);
+	}
 }
